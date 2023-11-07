@@ -1,0 +1,8 @@
+﻿.verify-form-container{
+    margin-top: 20vh
+}
+.verify-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

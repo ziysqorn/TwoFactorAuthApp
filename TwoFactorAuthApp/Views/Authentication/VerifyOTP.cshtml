@@ -1,0 +1,15 @@
+﻿@{
+	ViewData["Title"] = "Verify OTP";
+	Layout = "LoginFormLayout";
+}
+@model TwoFactorAuthApp.Models.OTP;
+<div class="verify-form-container">
+	<form class="verify-form" asp-action="VerifyOTP" asp-controller="Authentication" method="post">
+		<label style="font-size: 12px; color: black; margin-bottom: 3.5vh; font-weight: bold">An OTP has been sent to your phone !</label>
+		<div class="text-input-container">
+			<label class="text-input-label">Your OTP</label>
+			<input type="text" class="text-input" name="OTP"/>
+		</div>
+		<input type="submit" value="Verify OTP" class="login-button"/>
+	</form>
+</div>

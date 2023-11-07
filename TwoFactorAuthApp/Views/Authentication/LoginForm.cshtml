@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Two Factor Auth";
+    Layout = "LoginFormLayout";
+}
+<div class="login-form-container">
+    <form class="login-form" asp-action="Login" asp-controller="Authentication" method="post">
+        <label class="form-title">Login Form</label>
+        <div class="text-input-list-container">
+            <div class="text-input-container">
+                <label class="text-input-label">User name</label>
+                <input type="text" class="text-input" tabindex="1" name="Username" value="@ViewBag.Username"/>
+            </div>
+            <div class="text-input-container">
+                <label class="text-input-label">Password</label>
+                <input type="text" class="text-input" tabindex="2" name="Password" value="@ViewBag.Password"/>
+            </div>
+        </div>
+        <label style="color:red; font-size: 12px">@ViewBag.Message</label>
+        <input value="Login" class="login-button" type="submit" tabindex="-1">
+    </form>
+</div>
